@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 columns */
+    gap: 10px; /* Gap between time slots */
+}
+
+.time-slot {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    user-select: none;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.available {
+    background-color: #7CFC00; /* Green */
+}
+
+.full {
+    background-color: #FF0000; /* Red */
+    pointer-events: none; /* Disable clicking when full */
+}
+
+.time-slot:hover {
+    background-color: #e0e0e0;
+}
+
+.selected-time {
+    margin-top: 20px;
+}
+
+#datepicker {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.save-button {
+    cursor: pointer;
+    background-color: #427bff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    user-select: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    font-size: 16px;
+}
+
+.save-button:hover {
+    background-color: #e0e0e0;
+}
+
+.booked-appointment {
+    color: #FF0000; /* Red */
+}
